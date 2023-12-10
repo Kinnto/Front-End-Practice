@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Slide Show</title>
+<style>
+  .slide {
+    display: none;
+    width: 100%;
+  }
+
+  #slideshow {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+  #prev, #next, #pause {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div id="slideshow">
+  <button id="prev">Previous</button>
+  <button id="next">Next</button>
+  <button id="pause">Pause</button>
+  <select id="timing">
+    <option value="1000">1 Second</option>
+    <option value="2000">2 Seconds</option>
+	<option value="10000">10 Seconds</option>
+
+  </select>
+  <div id="images">
+    
+  <img src="pic/(1).png" class="slide">
+  <img src="pic/(2).png" class="slide">
+	<img src="pic/(3).png" class="slide">
+	<img src="pic/(4).png" class="slide">
+	<img src="pic/(5).png" class="slide">
+	<img src="pic/(6).png" class="slide">
+	<img src="pic/(7).png" class="slide">
+	<img src="pic/(8).png" class="slide">
+	<img src="pic/(9).png" class="slide">
+	<img src="pic/(10).png" class="slide">
+  </div>
+</div>
+
+<script src="slideshow.js"></script>
+
+</body>
+</html>
